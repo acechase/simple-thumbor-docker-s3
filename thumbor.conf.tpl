@@ -98,6 +98,8 @@ USE_BLACKLIST = {{ USE_BLACKLIST | default(False) }}
 ## full name of a python module (python must be able to import it)
 ## Defaults to: thumbor.loaders.http_loader
 LOADER = '{{ LOADER | default('thumbor.loaders.http_loader') }}'
+TC_AWS_LOADER_BUCKET = '{{ TC_AWS_LOADER_BUCKET | default('') }}'
+TC_AWS_LOADER_ROOT_PATH = '{{ TC_AWS_LOADER_ROOT_PATH | default('') }}'
 
 ## The file storage thumbor should use to store original images. This must be the
 ## full name of a python module (python must be able to import it)
